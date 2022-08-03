@@ -1,75 +1,101 @@
-import React from 'react'
-
+import React, { Fragment } from "react";
+import { Link } from "react-router-dom";
+import Logo from "../assets/img/logo512.png";
 const SideBar = () => {
-    return (
-        <>
-            {/* <div className="loader-bg">
-        <div className="loader-track">
-            <div className="loader-fill"></div>
+  return (
+    <Fragment>
+      <nav className="sidebar close">
+        <header>
+          <div className="image-text">
+            <span className="image">
+              <img src={Logo} alt="" />
+            </span>
+
+            <div className="text logo-text">
+              <span className="name">Codinglab</span>
+              <span className="profession">Web developer</span>
+            </div>
+          </div>
+
+          <i className="bx bx-chevron-right toggle"></i>
+        </header>
+
+        <div className="menu-bar">
+          <div className="menu">
+            <li className="search-box">
+              <i className="bx bx-search icon"></i>
+              <input type="text" placeholder="Search..." />
+            </li>
+
+            <ul className="menu-links">
+              <li className="nav-link">
+                <Link to="/SignIn">
+                  <i className="bx bx-home-alt icon"></i>
+                  <span className="text nav-text">Dashboard</span>
+                </Link>
+              </li>
+
+              <li className="nav-link">
+                <a href="https://facebook.com">
+                  <i className="bx bx-bar-chart-alt-2 icon"></i>
+                  <span className="text nav-text">Revenue</span>
+                </a>
+              </li>
+
+              <li className="nav-link">
+                <a href="https://facebook.com">
+                  <i className="bx bx-bell icon"></i>
+                  <span className="text nav-text">Notifications</span>
+                </a>
+              </li>
+
+              <li className="nav-link">
+                <a href="https://facebook.com">
+                  <i className="bx bx-pie-chart-alt icon"></i>
+                  <span className="text nav-text">Analytics</span>
+                </a>
+              </li>
+
+              <li className="nav-link">
+                <a href="https://facebook.com">
+                  <i className="bx bx-heart icon"></i>
+                  <span className="text nav-text">Likes</span>
+                </a>
+              </li>
+
+              <li className="nav-link">
+                <a href="https://facebook.com">
+                  <i className="bx bx-wallet icon"></i>
+                  <span className="text nav-text">Wallets</span>
+                </a>
+              </li>
+            </ul>
+          </div>
+
+          <div className="bottom-content">
+            <li className="">
+              <a href="https://facebook.com">
+                <i className="bx bx-log-out icon"></i>
+                <span className="text nav-text">Logout</span>
+              </a>
+            </li>
+
+            <li className="mode">
+              <div className="sun-moon">
+                <i className="bx bx-moon icon moon"></i>
+                <i className="bx bx-sun icon sun"></i>
+              </div>
+              <span className="mode-text text">Dark mode</span>
+
+              <div className="toggle-switch">
+                <span className="switch"></span>
+              </div>
+            </li>
+          </div>
         </div>
-    </div> */}
+      </nav>
+    </Fragment>
+  );
+};
 
-            <nav className="pcoded-navbar">
-                <div className="navbar-wrapper">
-                    <div className="navbar-brand header-logo">
-                        {/* <a href="index.html" className="b-brand">
-                            <div className="b-bg">
-                                <i className="feather icon-trending-up"></i>
-                            </div>
-                            <span className="b-title">Datta Able</span>
-                        </a> */}
-                        {/* <a className="mobile-menu" id="mobile-collapse" href="javascript:"><span></span></a> */}
-                    </div>
-
-                    <div className="navbar-content scroll-div">
-                        <ul className="nav pcoded-inner-navbar">
-                            <li className="nav-item pcoded-menu-caption">
-                                <label>Navigation</label>
-                            </li>
-                            <li data-username="dashboard Default Ecommerce CRM Analytics Crypto Project" className="nav-item">
-{/*                                 <a href="index.html" className="nav-link "><span className="pcoded-micon"><i className="feather icon-home"></i></span><span className="pcoded-mtext">Dashboard</span></a>
- */}                            </li>
-                            <li className="nav-item pcoded-menu-caption">
-                                <label>UI Element</label>
-                            </li>
-                            <li data-username="basic components Button Alert Badges breadcrumb Paggination progress Tooltip popovers Carousel Cards Collapse Tabs pills Modal Grid System Typography Extra Shadows Embeds" className="nav-item pcoded-hasmenu active pcoded-trigger">
-{/*                                 <a href="javascript:" className="nav-link "><span className="pcoded-micon"><i className="feather icon-box"></i></span><span className="pcoded-mtext">Components</span></a>
- */}                                <ul className="pcoded-submenu">
-                                    {/* <li className=""><a href="bc_button.html" className="">Button</a></li> */}
-                                </ul>
-                            </li>
-                            <li className="nav-item pcoded-menu-caption">
-                                <label>Forms & table</label>
-                            </li>
-                            <li data-username="form elements advance componant validation masking wizard picker select" className="nav-item">
-{/*                                 <a href="form_elements.html" className="nav-link "><span className="pcoded-micon"><i className="feather icon-file-text"></i></span><span className="pcoded-mtext">Form elements</span></a>
- */}                            </li>
-                            <li data-username="Table bootstrap datatable footable" className="nav-item">
-{/*                                 <a href="tbl_bootstrap.html" className="nav-link "><span className="pcoded-micon"><i className="feather icon-server"></i></span><span className="pcoded-mtext">Table</span></a>
- */}                            </li>
-                            <li className="nav-item pcoded-menu-caption">
-                                <label>Chart & Maps</label>
-                            </li>
-{/*                             <li data-username="Charts Morris" className="nav-item"><a href="chart-morris.html" className="nav-link "><span className="pcoded-micon"><i className="feather icon-pie-chart"></i></span><span className="pcoded-mtext">Chart</span></a></li>
-                            <li data-username="Maps Google" className="nav-item"><a href="map-google.html" className="nav-link "><span className="pcoded-micon"><i className="feather icon-map"></i></span><span className="pcoded-mtext">Maps</span></a></li> */}
-                            <li className="nav-item pcoded-menu-caption">
-                                <label>Pages</label>
-                            </li>
-                            <li data-username="Authentication Sign up Sign in reset password Change password Personal information profile settings map form subscribe" className="nav-item pcoded-hasmenu">
-{/*                                 <a href="javascript:" className="nav-link "><span className="pcoded-micon"><i className="feather icon-lock"></i></span><span className="pcoded-mtext">Authentication</span></a>
- */}                                <ul className="pcoded-submenu">
-                                    {/* <li className=""><a href="auth-signup.html" className="" target="_blank">Sign up</a></li>
-                                    <li className=""><a href="auth-signin.html" className="" target="_blank">Sign in</a></li> */}
-                                </ul>
-                            </li>
-                            {/* <li data-username="Sample Page" className="nav-item"><a href="sample-page.html" className="nav-link"><span className="pcoded-micon"><i className="feather icon-sidebar"></i></span><span className="pcoded-mtext">Sample page</span></a></li>
-                            <li data-username="Disabled Menu" className="nav-item disabled"><a href="javascript:" className="nav-link"><span className="pcoded-micon"><i className="feather icon-power"></i></span><span className="pcoded-mtext">Disabled menu</span></a></li> */}
-                        </ul>
-                    </div>
-                </div>
-            </nav>
-        </>
-    )
-}
-
-export default SideBar
+export default SideBar;
