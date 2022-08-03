@@ -12,8 +12,7 @@ const SideBar = () => {
             </span>
 
             <div className="text logo-text">
-              <span className="name">Codinglab</span>
-              <span className="profession">Web developer</span>
+              <span className="name">Chivo Pets</span>
             </div>
           </div>
 
@@ -53,13 +52,6 @@ const SideBar = () => {
                 <a href="https://facebook.com">
                   <i className="bx bx-pie-chart-alt icon"></i>
                   <span className="text nav-text">Analytics</span>
-                </a>
-              </li>
-
-              <li className="nav-link">
-                <a href="https://facebook.com">
-                  <i className="bx bx-heart icon"></i>
-                  <span className="text nav-text">Likes</span>
                 </a>
               </li>
 

@@ -57,9 +57,7 @@ body.dark{
     transition: var(--tran-05);
     z-index: 100;  
 }
-.sidebar.close{
-    width: 88px;
-}
+
 
 /* ===== Reusable code - Here ===== */
 .sidebar li{
@@ -99,7 +97,7 @@ body.dark{
     opacity: 1;
 }
 .sidebar.close .text{
-    opacity: 0;
+    opacity: 8;
 }
 /* =========================== */
 

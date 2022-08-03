@@ -1,6 +1,7 @@
 import React, { Fragment } from "react";
 
 const DoctorInfo = () => {
+  
   return (
     <Fragment>
       <div className="col-xl-12 col-md-12 m-b-30">
