@@ -9562,6 +9562,12 @@ div.code-toolbar > .toolbar span:hover {
   }
 }
 
+@media only screen and (max-width: 600px) {
+  body {
+    background-color: lightblue;
+  }
+}
+
 /*  Smart wizard 4 end */
 /**====== wizard css end ======**/
 /**  =====================

@@ -26,7 +26,7 @@ const DashboardTest = () => {
             <div className="pcoded-inner-content">
               <div className="main-body">
                 <div className="page-wrapper">
-                  <div className="row">
+                  <div className="row flex-sm-block">
                     <CardDone />
                     <TableUsers />
                     <CardLikes />

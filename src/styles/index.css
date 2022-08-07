@@ -314,3 +314,18 @@ body.dark .home .text{
 .menu-links{
   padding-left: 0rem;
 }
+
+@media only screen and (max-width: 600px) {
+        .sidebar{
+            width: 88px;
+        }   
+        .sidebar header .logo-text{
+            display: none;
+        }
+        *{
+            width: 100%;
+        }
+        .sidebar header .toggle{
+            display: none;
+        }
+  }
