@@ -1,6 +1,6 @@
 import React, { Fragment, useState } from "react";
 import { Link } from "react-router-dom";
-import Logo from "../assets/img/logo512.png";
+import Logo from "../assets/img/pet.png";
 
 const SideBar = () => {
   const [sideBarIcon, setsideBarIcon] = useState(false);

@@ -6,7 +6,7 @@ const CardDone = () => {
       <div className="col-md-6 col-xl-4">
         <div className="card daily-sales">
           <div className="card-block">
-            <h6 className="mb-4">Daily Sales</h6>
+            <h6 className="mb-4">Consultas</h6>
             <div className="row d-flex align-items-center">
               <div className="col-9">
                 <h3 className="f-w-300 d-flex align-items-center m-b-0">
@@ -36,7 +36,7 @@ const CardDone = () => {
       <div className="col-md-6 col-xl-4">
         <div className="card Monthly-sales">
           <div className="card-block">
-            <h6 className="mb-4">Monthly Sales</h6>
+            <h6 className="mb-4">Encuestas realizadas</h6>
             <div className="row d-flex align-items-center">
               <div className="col-9">
                 <h3 className="f-w-300 d-flex align-items-center  m-b-0">
@@ -65,7 +65,7 @@ const CardDone = () => {
       <div className="col-md-12 col-xl-4">
         <div className="card yearly-sales">
           <div className="card-block">
-            <h6 className="mb-4">Yearly Sales</h6>
+            <h6 className="mb-4">Encuestas en proceso</h6>
             <div className="row d-flex align-items-center">
               <div className="col-9">
                 <h3 className="f-w-300 d-flex align-items-center  m-b-0">
