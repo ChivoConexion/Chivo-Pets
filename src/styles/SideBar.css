@@ -156,6 +156,19 @@ p.text-muted {
   font-size: 13px;
 }
 
+.fondo {
+  background-color: #010c4c;
+
+}
+
+.color{
+  color: #66f2c9;
+
+}
+
+.color1{
+  color: #fff ;
+}
 .card {
   border-radius: 0;
   -webkit-box-shadow: 0 1px 20px 0 rgba(69, 90, 100, 0.08);
