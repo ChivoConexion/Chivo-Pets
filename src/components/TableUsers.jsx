@@ -3,7 +3,7 @@ import React, { Fragment } from "react";
 const TableUsers = () => {
   return (
     <Fragment>
-      <div className="col-xl-12 col-md-6 col-sm-3">
+      <div className="col-xl-12 col-md-6">
         <div className="card Recent-Users">
           <div className="card-header">
             <h3>Control de calidad</h3>
@@ -34,10 +34,10 @@ const TableUsers = () => {
                       </h6>
                     </td>
                     <td>
-                      <a href="#!" className="label theme-bg2 text-white f-12">
+                      <a href="#!" className="label theme-bg2 text-white f-12 text-decoration-none">
                         En proceso
                       </a>
-                      <a href="#!" className="label theme-bg text-white f-12">
+                      <a href="#!" className="label theme-bg text-white f-12 text-decoration-none">
                         Realizada
                       </a>
                     </td>
@@ -60,10 +60,10 @@ const TableUsers = () => {
                       </h6>
                     </td>
                     <td>
-                      <a href="#!" className="label theme-bg2 text-white f-12">
+                      <a href="#!" className="label theme-bg2 text-white f-12 text-decoration-none">
                         En proceso
                       </a>
-                      <a href="#!" className="label theme-bg text-white f-12">
+                      <a href="#!" className="label theme-bg text-white f-12 text-decoration-none">
                         Realizada
                       </a>
                     </td>
@@ -86,10 +86,10 @@ const TableUsers = () => {
                       </h6>
                     </td>
                     <td>
-                      <a href="#!" className="label theme-bg2 text-white f-12">
+                      <a href="#!" className="label theme-bg2 text-white f-12 text-decoration-none">
                         En proceso
                       </a>
-                      <a href="#!" className="label theme-bg text-white f-12">
+                      <a href="#!" className="label theme-bg text-white f-12 text-decoration-none">
                         Realizada
                       </a>
                     </td>

@@ -1,5 +1,5 @@
 import React, { Fragment } from "react";
-
+import {AiOutlineArrowUp, AiOutlineArrowDown} from 'react-icons/ai'
 const CardDone = () => {
   return (
     <Fragment>
@@ -10,7 +10,7 @@ const CardDone = () => {
             <div className="row d-flex align-items-center">
               <div className="col-9">
                 <h3 className="f-w-300 d-flex align-items-center m-b-0">
-                  <i className="feather icon-arrow-up text-c-green f-30 m-r-10"></i>
+                 <AiOutlineArrowUp className="text-c-green f-30 m-r-10"/>
                   $ 249.95
                 </h3>
               </div>
@@ -40,12 +40,12 @@ const CardDone = () => {
             <div className="row d-flex align-items-center">
               <div className="col-9">
                 <h3 className="f-w-300 d-flex align-items-center  m-b-0">
-                  <i className="feather icon-arrow-down text-c-red f-30 m-r-10"></i>
+                <AiOutlineArrowDown className="text-c-red f-30 m-r-10"/>
                   $ 2.942.32
                 </h3>
               </div>
               <div className="col-3 text-right">
-                <p className="m-b-0">36%</p>
+                <p className="m-b-0">-36%</p>
               </div>
             </div>
             <div className="progress m-t-30" style={{ height: "7px" }}>
@@ -69,7 +69,7 @@ const CardDone = () => {
             <div className="row d-flex align-items-center">
               <div className="col-9">
                 <h3 className="f-w-300 d-flex align-items-center  m-b-0">
-                  <i className="feather icon-arrow-up text-c-green f-30 m-r-10"></i>
+                <AiOutlineArrowUp className="text-c-green f-30 m-r-10"/>
                   $ 8.638.32
                 </h3>
               </div>

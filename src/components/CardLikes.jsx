@@ -30,6 +30,7 @@ const CardLikes = () => {
                   <div
                     className="progress-bar progress-c-theme"
                     role="progressbar"
+                    style={{width: '60%', height: '6px'}}
                     aria-valuenow="60"
                     aria-valuemin="0"
                     aria-valuemax="100"
@@ -37,7 +38,7 @@ const CardLikes = () => {
                 </div>
               </div>
               <div className="col-6">
-                <h6 className="text-center  m-b-10">
+                <h6 className="text-center m-b-10">
                   <span className="text-muted m-r-5">Duration:</span>
                   3,539
                 </h6>
@@ -45,6 +46,7 @@ const CardLikes = () => {
                   <div
                     className="progress-bar progress-c-theme2"
                     role="progressbar"
+                    style={{width: '45%', height: '6px'}}
                     aria-valuenow="45"
                     aria-valuemin="0"
                     aria-valuemax="100"
@@ -82,6 +84,7 @@ const CardLikes = () => {
                   <div
                     className="progress-bar progress-c-green"
                     role="progressbar"
+                    style={{width: '40%', height: '6px'}}
                     aria-valuenow="40"
                     aria-valuemin="0"
                     aria-valuemax="100"
@@ -97,6 +100,7 @@ const CardLikes = () => {
                   <div
                     className="progress-bar progress-c-blue"
                     role="progressbar"
+                    style={{width: '70%', height: '6px'}}
                     aria-valuenow="70"
                     aria-valuemin="0"
                     aria-valuemax="100"
@@ -134,6 +138,7 @@ const CardLikes = () => {
                   <div
                     className="progress-bar progress-c-theme"
                     role="progressbar"
+                    style={{width: '80%', height: '6px'}}
                     aria-valuenow="80"
                     aria-valuemin="0"
                     aria-valuemax="100"
@@ -149,6 +154,7 @@ const CardLikes = () => {
                   <div
                     className="progress-bar progress-c-theme2"
                     role="progressbar"
+                    style={{width: '50%', height: '6px'}}
                     aria-valuenow="50"
                     aria-valuemin="0"
                     aria-valuemax="100"

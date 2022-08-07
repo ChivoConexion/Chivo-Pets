@@ -3,7 +3,7 @@
 
 import CardDone from "../components/CardDone";
 import CardLikes from "../components/CardLikes";
-import DoctorInfo from "../components/DoctorInfo";
+//import DoctorInfo from "../components/DoctorInfo";
 import TableUsers from "../components/TableUsers";
 
 const DashboardTest = () => {
@@ -30,7 +30,7 @@ const DashboardTest = () => {
                     <CardDone />
                     <TableUsers />
                     <CardLikes />
-                    <DoctorInfo />
+                   {/*  <DoctorInfo /> */}
                   </div>
                 </div>
               </div>

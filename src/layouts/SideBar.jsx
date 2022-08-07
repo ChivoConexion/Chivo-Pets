@@ -1,10 +1,26 @@
-import React, { Fragment } from "react";
+import React, { Fragment, useState } from "react";
 import { Link } from "react-router-dom";
 import Logo from "../assets/img/logo512.png";
+
 const SideBar = () => {
+  const [sideBarIcon, setsideBarIcon] = useState(false);
+  let textNone = {
+    opacity: 0,
+  };
+
+  let text = {
+    opacity: 10,
+  };
+
+
+  const ocultarMenu = () => {
+    setsideBarIcon(!sideBarIcon);
+  };
+
+  /* className="sidebar close" */
   return (
     <Fragment>
-      <nav className="sidebar close">
+      <nav className={`sidebar ${sideBarIcon ? "close" : ""}`}>
         <header>
           <div className="image-text">
             <span className="image">
@@ -12,11 +28,14 @@ const SideBar = () => {
             </span>
 
             <div className="text logo-text">
-              <span className="name">Chivo Pets</span>
+              <span className="name" style={sideBarIcon ? textNone : text}>
+                Chivo Pets
+              </span>
             </div>
           </div>
 
-          <i className="bx bx-chevron-right toggle"></i>
+          <button onClick={ocultarMenu} className="bx bx-chevron-right toggle" >
+          </button>
         </header>
 
         <div className="menu-bar">
@@ -64,7 +83,7 @@ const SideBar = () => {
             </ul>
           </div>
 
-          <div className="bottom-content">
+          <div className="bottom-content ">
             <li className="">
               <a href="https://facebook.com">
                 <i className="bx bx-log-out icon"></i>
@@ -72,17 +91,16 @@ const SideBar = () => {
               </a>
             </li>
 
-            <li className="mode">
-              <div className="sun-moon">
+              <li className="mode col-sm-12">
+              {/* <div className="sun-moon">
                 <i className="bx bx-moon icon moon"></i>
                 <i className="bx bx-sun icon sun"></i>
-              </div>
-              <span className="mode-text text">Dark mode</span>
+              </div> */}
 
               <div className="toggle-switch">
                 <span className="switch"></span>
               </div>
-            </li>
+            </li> 
           </div>
         </div>
       </nav>
